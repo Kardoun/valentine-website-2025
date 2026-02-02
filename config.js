@@ -1,70 +1,57 @@
-// Basic Information
-valentineName: "Dhekra"                    // Your Valentine's name
-pageTitle: "Will You Be My Valentine? 💝" // Browser tab title
-
-// Floating Background Elements
-floatingEmojis: {
-    hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis in background
-    bears: ['🧸', '🐻']                       // Bear emojis in background
-}
-
-// Questions and Buttons
-questions: {
+const config = {
+  valentineName: "Dhekra",
+  pageTitle: "Willst du mein Valentine sein? 💝",
+  floatingEmojis: {
+    hearts: ['❤️', '💖', '💝', '💗', '💓'],
+    bears: ['🧸', '🐻']
+  },
+  questions: {
     first: {
-        text: "Do you like me?",                   // First question
-        yesBtn: "Yes",                             // Yes button text
-        noBtn: "No",                               // No button text
-        secretAnswer: "I don't like you, I love you! ❤️"  // Hidden message
+      text: "Magst du mich?",
+      yesBtn: "Ja ❤️",
+      noBtn: "Nein",
+      secretAnswer: "Ich mag dich nicht... ich liebe dich! ❤️"
     },
     second: {
-        text: "How much do you love me?",          // Second question
-        startText: "This much!",                   // Text before percentage
-        nextBtn: "Next ❤️"                         // Next button text
+      text: "Wie sehr liebst du mich?",
+      startText: "So viel!",
+      nextBtn: "Weiter 💕"
     },
     third: {
-        text: "Will you be my Valentine...?",      // Final question
-        yesBtn: "Yes!",                            // Yes button text
-        noBtn: "No"                                // No button text
+      text: "Willst du mein Valentine sein?",
+      yesBtn: "Ja!",
+      noBtn: "Nein"
     }
-}
-
-// Love Meter Messages
-loveMessages: {
-    extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows above 5000%
-    high: "To infinity and beyond! 🚀💝",              // Shows above 1000%
-    normal: "And beyond! 🥰"                           // Shows above 100%
-}
-
-// Final Celebration
-celebration: {
-    title: "Yay! I'm the luckiest person...",     // Celebration title
-    message: "Now come get your gift...",          // Celebration message
-    emojis: "🎁💖🤗💝💋❤️💕"                        // Celebration emojis
-}
-
-// Website Colors
-colors: {
-    backgroundStart: "#ffafbd",      // Background gradient start
-    backgroundEnd: "#ffc3a0",        // Background gradient end
-    buttonBackground: "#ff6b6b",     // Button color
-    buttonHover: "#ff8787",          // Button hover color
-    textColor: "#ff4757"            // Text color
-}
-
-// Animation Settings
-animations: {
-    floatDuration: "15s",           // How long hearts float (10-20s)
-    floatDistance: "50px",          // Sideways movement (30-70px)
-    bounceSpeed: "0.5s",            // Bounce animation speed (0.3-0.7s)
-    heartExplosionSize: 1.5         // Final heart explosion size (1.2-2.0)
-}
-
-// Music Settings
-music: {
-    enabled: true, // Music feature is enabled
-    autoplay: true, // Try to autoplay (note: some browsers may block this)
-    musicUrl: "YOUR_CLOUDINARY_URL_HERE", // Paste your music URL here
-    startText: "🎵 Play Music", // Button text to start music
-    stopText: "🔇 Stop Music", // Button text to stop music
-    volume: 0.5 // Volume level (0.0 to 1.0)
-}
+  },
+  loveMessages: {
+    extreme: "WOW so viel?! 🥰🚀💝",
+    high: "Bis ins Unendliche! 🚀💝",
+    normal: "Und darüber hinaus! 🥰"
+  },
+  celebration: {
+    title: "Yay! Ich bin der Glücklichste...",
+    message: "Jetzt hol deinen Geschenk...",
+    emojis: "🎁💖🤗💝💋❤️💕"
+  },
+  colors: {
+    backgroundStart: "#ffafbd",
+    backgroundEnd: "#ffc3a0",
+    buttonBackground: "#ff6b6b",
+    buttonHover: "#ff8787",
+    textColor: "#ff4757"
+  },
+  animations: {
+    floatDuration: "15s",
+    floatDistance: "50px",
+    bounceSpeed: "0.5s",
+    heartExplosionSize: 1.5
+  },
+  music: {
+    enabled: true,
+    autoplay: false,  // Browser blocken Autoplay
+    musicUrl: "",     // Leer lassen oder Musik-URL
+    startText: "🎵 Musik",
+    stopText: "🔇 Stop",
+    volume: 0.5
+  }
+};
