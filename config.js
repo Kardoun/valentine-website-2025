@@ -21,38 +21,44 @@ const CONFIG = {
     // Questions and answers
     // Customize each question and its possible responses
     questions: {
-        first: {
-            text: "Do you like me?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
-            secretAnswer: "I don't like you, I love you! ❤️"           // Secret hover message
-        },
-        second: {
-            text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
-        },
-        third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
-        }
-    },
+  first: {
+    text: "Do you like me?",
+    yesBtn: "Yes ❤️",
+    noBtn: "No",
+    secretAnswer: "I don't like you, I love you! ❤️"
+  },
+  second: {
+    text: "kadeh thebni?",  // Deine persönliche
+    startText: "This much!",
+    nextBtn: "Next ❤️"
+  },
+  third: {
+    text: "Will you be my Valentine on February 14th, 2026? 🌹",
+    yesBtn: "Yes!",
+    noBtn: "No"
+  },
+  // EXTRA FRAGEN (romantisch, persönlich):
+  fourth: {
+    text: "Tethakar awel Date?",
+    yesBtn: "Every moment! 😍",
+    noBtn: "thakarni",
+    secretAnswer: "That night changed everything 💫"
+  },
+  fifth: {
+    text: "What's my favorite food?",
+    yesBtn: "Lasagne! 🍕",
+    noBtn: "Guess again!",
+    secretAnswer: "Extra cheese, just how I like it 😉"
+  },
+  sixth: {
+    text: "Ready for adventures with me in 2026?",
+    yesBtn: "Always! 🌍",
+    noBtn: "Too scary?",
+    secretAnswer: "From Hannover to the world together ✈️"
+  },
+  
+},
 
-    // Love meter messages
-    // They show up depending on how far they slide the meter
-    loveMessages: {
-        extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows when they go past 5000%
-        high: "To infinity and beyond! 🚀💝",              // Shows when they go past 1000%
-        normal: "And beyond! 🥰"                           // Shows when they go past 100%
-    },
-
-    // Messages that appear after they say "Yes!"
-    celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
-    },
 
     // Color scheme for the website
     // Use https://colorhunt.co or https://coolors.co to find beautiful color combinations
